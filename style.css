@@ -149,9 +149,16 @@ header .user img{
 }
 .dashboard h1{
     font-weight: bold;
+    
     position: relative;
     margin-bottom: 10px;
 }
+
+.dashboard h2{
+    font-weight: bold;
+    font-size: 28px;
+}
+
 .dashboard h1::after{
     content: "";
     position: absolute;
@@ -186,7 +193,7 @@ header .user img{
 .dashboard .dash-items .tickets,
 .dashboard .dash-items .news,
 .dashboard .dash-items .tasks,
-.dashboard .dash-items .search-items,
+.dashboard .dash-items .search,
 .dashboard .dash-items .uploads,
 .dashboard .dash-items .project-progress,
 .dashboard .dash-items .reminders,
@@ -197,7 +204,7 @@ header .user img{
     background-color:#ffffff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
 }
 .dashboard .dash-items .welcome{
     position: relative;
@@ -473,4 +480,380 @@ header .user img{
 .dashboard .dash-items .tickets .items .item-info .fa-rectangle-list{
     color: #ee8f2a;
 }
+.dashboard .dash-items .news .news-items{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.dashboard .dash-items .news .item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e1e0e0e7;
+}
+.dashboard .dash-items .news .item .info{
+    display: flex;
+    gap: 15px;
+}
+
+.dashboard .dash-items .news .item .info .img{
+    width: 105px;
+    height: 55px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.dashboard .dash-items .news .item .info .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+
+.dashboard .dash-items .news .item .days-ago{
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5555551a;
+}
+.dashboard .dash-items .news .item .days-ago p{
+    color:#000000;
+    margin-top: 0;
+}
+
+.dashboard .dash-items .tasks .tasks-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.dashboard .dash-items .tasks .tasks-items .item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .dash-items .tasks .item{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1e0e0e7;
+}
+
+.dashboard .dash-items .tasks .deleted{
+    text-decoration: line-through;
+    color: #aaaaaa;
+}
+
+.dashboard .dash-items .tasks .deleted p{
+    color: #dedede;
+}
+
+.dashboard .dash-items .tasks .last , .dashboard .dash-items .news .last{
+    border-bottom: none;
+}
+
+.dashboard .dash-items .tasks .icon{
+    transition: 0.5s;
+}
+
+.dashboard .dash-items .tasks .icon:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.dashboard .dash-items .search .search-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+.dashboard .dash-items .search .search-items .item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 15px;
+    font-size: 16px;
+    color: #000000;
+}
+.dashboard .dash-items .search .search-items .item .Search-Count , .keyword-word{
+    font-size: 19px;
+
+}
+
+.dashboard .dash-items .search .search-items .item p{
+    color: #000000;
+}
+
+.dashboard .dash-items .search .search-items .item .clr{
+    color: #555555;
+    font-size: 20px;
+}
+
+.dashboard .dash-items .search .search-items .item .count{
+    padding: 6px 10px;
+    background-color: #5555551a;
+    border-radius: 5px;
+    color: #000000;
+}
+
+
+.dashboard .dash-items .uploads .uploads-items{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+}
+.dashboard .dash-items .uploads .uploads-items .item{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 15px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.dashboard .dash-items .uploads .uploads-items .item .info{
+    display: flex;
+    gap: 5px;
+    /* background-color: #dc3546; */
+}
+
+.dashboard .dash-items .uploads .uploads-items .item .info .img{
+    width: 40px;
+    height: 45px;
+    /* background-color: #28a746; */
+}
+
+.dashboard .dash-items .uploads .uploads-items .item .info img{
+    width: 100%;
+    height: 100%;
+}
+
+.dashboard .dash-items .uploads .uploads-items .item .info .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+}
+.dashboard .dash-items .uploads .uploads-items .item .info .text p{
+    margin-top: 0;
+}
+.dashboard .dash-items .uploads .uploads-items .item .size{
+padding: 6px 10px;
+    background-color: #5555551a;
+    border-radius: 5px;
+    color: #000000;
+}
+.dashboard .dash-items .project-progress .progress-items{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.dashboard .dash-items .project-progress .progress-items .items{
+    margin-top: 0;
+}
+
+.dashboard .dash-items .project-progress .progress-items .items{
+    display: flex;
+    flex-direction: column;
+    padding: 2px 0;
+    justify-content: space-between;
+    gap: 30px;
+    font-size: 16px;
+    color: #000000;
+}  
+.dashboard .dash-items .project-progress .progress-items .items p{
+    margin-top: 0;
+    color: #000000;
+    font-size: large;
+}
+
+.dashboard .dash-items .project-progress .progress-items .img{
+    width: 160px;
+    height: 150px;
+    align-self: flex-end;
+    opacity: 0.3;
+}
+
+.dashboard .dash-items .project-progress .progress-items .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.dashboard .dash-items .project-progress .parag{
+    display: flex;
+    gap: 7px;
+}
+.dashboard .dash-items .project-progress .parag .line{
+    width: 4px;
+    height: 100%;
+    background-color: #0075FF;
+    /* position: relative; */
+    position: absolute;
+}
+.dashboard .dash-items .project-progress .container-circles{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    height: 100%;
+    background-color:transparent;
+    position: absolute;
+    
+}
+
+.dashboard .dash-items .project-progress .line-circles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    position: relative;
+}
+
+.dashboard .dash-items .project-progress .container-circles .circle{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    outline: #0075FF solid 2px;
+    border: #ffffff solid 2px;
+    background-color: #0075FF;
+}
+.dashboard .dash-items .project-progress .container-circles .circle.last{
+    background-color: #ffffff;
+}
+
+.dashboard .dash-items .project-progress .container-circles .circle.before-last{
+    animation: cgcolor 1.3s infinite;
+    
+}
+@keyframes cgcolor{
+    0%{
+        background-color: #0075FF;
+    }
+    50%{
+        background-color: #ffffff;
+    }
+    100%{
+        background-color: #0075FF;
+    }
+}
+
+.dashboard .dash-items .reminders .reminders-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.dashboard .dash-items .reminders .reminders-items .item{
+    display: flex;
+    gap: 10px;
+}
+
+.dashboard .dash-items .reminders .reminders-items .item .decr{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.dashboard .dash-items .reminders .reminders-items .item .rems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 7px;
+    padding: 8px 0;
+}
+.dashboard .dash-items .reminders .reminders-items .item .decr .crl{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    
+}
+
+.dashboard .dash-items .reminders .reminders-items .item .decr .line{
+    width: 1px;
+    height: 80%;
+    
+}
+
+.dashboard .dash-items .reminders .reminders-items .item .rems p{
+    font-weight: bold;
+    color: #000000;
+    margin-top: 0;
+}
+.dashboard .dash-items .reminders .reminders-items .item .rems span{
+    color: #555555;
+}
+
+.dashboard .dash-items .reminders .reminders-items .item .decr .blue{
+    background-color: #007bff;
+}
+.dashboard .dash-items .reminders .reminders-items .item .decr .green{
+    background-color: #22C55E;
+}
+.dashboard .dash-items .reminders .reminders-items .item .decr .orange{
+    background-color: #F59E0B;
+}
+.dashboard .dash-items .reminders .reminders-items .item .decr .red{
+    background-color: #F44336;
+}
+
+.dashboard .dash-items .posts .posts-items{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+.dashboard .dash-items .posts .posts-items .item-top{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: #e8e8e8 solid 1px;
+}
+.dashboard .dash-items .posts .posts-items .item-top .img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.dashboard .dash-items .posts .posts-items .item-top img{
+    width: 100%;
+    height: 100%;
+}
+.dashboard .dash-items .posts .posts-items .item-cntr{
+    font-size: large;
+    color: #000000;
+    padding: 35px 0;
+    border-bottom: #e8e8e8 solid 1px;
+}
+.dashboard .dash-items .posts .posts-items .item-down{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    color: #888888;
+}
+
+
 
